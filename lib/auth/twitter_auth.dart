@@ -26,8 +26,8 @@ class TwitterAuthentication {
 
     _ref.read(twitterApiClientProvider).state = dta.TwitterApi(
       client: dta.TwitterClient(
-        consumerKey: _ref.read(environmentProvider).consumerKey,
-        consumerSecret: _ref.read(environmentProvider).consumerSecret,
+        consumerKey: const String.fromEnvironment('CONSUMER_KEY'),
+    consumerSecret: const String.fromEnvironment('CONSUMER_SECRET'),
         secret: cred.secret ?? "",
         token: cred.accessToken ?? "",
       ),
@@ -55,8 +55,8 @@ final firebaseProvider = FutureProvider<FirebaseApp>((ref) async {
   ref.read(sharePrefProvider).state = pref;
   ref.read(twitterApiClientProvider).state = dta.TwitterApi(
       client: dta.TwitterClient(
-    consumerKey: ref.read(environmentProvider).consumerKey,
-    consumerSecret: ref.read(environmentProvider).consumerSecret,
+    consumerKey: const String.fromEnvironment('CONSUMER_KEY'),
+    consumerSecret: const String.fromEnvironment('CONSUMER_SECRET'),
     secret: secret ?? "",
     token: accessToken ?? "",
   ));
@@ -69,9 +69,11 @@ final twitterAuthProvider = Provider<TwitterAuthentication>((ref) {
 });
 
 final twitterLoginProvider = Provider<TwitterLogin>((ref) {
-  final env = ref.watch(environmentProvider);
+  final env = ref.read(environmentProvider);
   return TwitterLogin(
-      consumerKey: env.consumerKey, consumerSecret: env.consumerSecret);
+    consumerKey: const String.fromEnvironment('CONSUMER_KEY'),
+    consumerSecret: const String.fromEnvironment('CONSUMER_SECRET'),
+  );
 });
 
 final userProvider = StateProvider<User?>((ref) {
