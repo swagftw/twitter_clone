@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "572736894063",
+    "project_id": "twitterclient-d07cf",
+    "storage_bucket": "twitterclient-d07cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572736894063:android:0b229cf524e04bc905099a",
+        "android_client_info": {
+          "package_name": "com.swag.twitter_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572736894063-lka2733nevac1v4bcp8s6jalmfon43je.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swag.twitter_client",
+            "certificate_hash": "6b8a985034b725b906522c7b5bf35105ef6b0a0f"
+          }
+        },
+        {
+          "client_id": "572736894063-js208fnskdlc1dve3l5k2ct8nsusk1km.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHthPIOCObo2ZVNYfAnPaV8t-5rb6auh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572736894063-js208fnskdlc1dve3l5k2ct8nsusk1km.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
