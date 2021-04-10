@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:twitter_client/api/twitter_api.dart';
 import 'package:twitter_client/styles.dart';
 import '../auth/twitter_auth.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

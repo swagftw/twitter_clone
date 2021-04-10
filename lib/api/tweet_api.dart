@@ -53,7 +53,7 @@ class MyReTweetProfileApi extends StateNotifier<UserReTweetsState> {
   TwitterApi _api;
   Future getReTweets() async {
     try {
-      if (state != UserTweetsState.loading()) {
+      if (state != UserReTweetsState.loading()) {
         state = UserReTweetsState.loading();
       }
       List<Tweet> tweets = await _api.tweetService.retweetsOfMe();

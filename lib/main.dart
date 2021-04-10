@@ -1,10 +1,10 @@
-import 'package:firebase_core/firebase_core.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/screenutil_init.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+
 import 'package:twitter_client/auth/twitter_auth.dart';
 import 'package:twitter_client/pages/home_page.dart';
 import 'package:twitter_client/styles.dart';
